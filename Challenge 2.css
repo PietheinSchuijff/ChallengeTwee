@@ -1,0 +1,128 @@
+body {
+background: crimson;
+color: white;
+font-family: roboto;
+}
+canvas {
+  position: absolute;
+  margin-top: 50px;
+  height: 200px;
+  width: 200px;
+  margin-left: 125px;
+}
+h1 {
+  margin-left: 125px;
+}
+.earth {
+  position: absolute;
+  top: 200px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 300px;
+  height: 300px;
+  background-image: url(map.jpg);
+  border-radius: 50%;
+  background-size: cover;
+  box-shadow: -20px -20px 50px 2px #000 inset, 0 0 20px 2px #000;
+  animation: spin 30s linear alternate infinite
+}
+@keyframes spin{
+  100%{background-position: 100%;}
+}  
+  
+@media only screen and (min-width: 414px) {
+  /*iPhone 6/7/8*/
+  body {
+    font-family: roboto, sans-serif;
+    align-content: center;
+    background-color: lightblue;
+    color: black;
+  }
+
+  canvas {
+    margin-top: 50px;
+    position: absolute;
+    margin-left: 100px;
+  }
+  .earth {
+    margin-top: 150px;
+    margin-left: 60px;
+  }
+  h1 {
+    margin-left: 110px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  /*iPad*/
+  body {
+    font-family: roboto, sans-serif;
+    align-content: center;
+    background-color: crimson;
+    color: white;
+  }
+  h1 {
+    margin-left: 290px;
+  }
+  canvas {
+    height: 500px;
+    width: 500px;
+    margin-top: 50px;
+    position: absolute;
+        margin-left: 125px; 
+  }
+  .earth {
+    margin-top: 600px;
+    margin-left: 175px;
+    height: 400px;
+    width: 400px;
+  }
+  @media only screen and (min-width: 1280px) {
+    /*Kleine desktop*/
+  body {
+    font-family: roboto, sans-serif;
+    align-content: center;
+    background-color: lightblue;
+    color: black;
+  }
+  canvas {
+    height: 400px;
+    width: 400px;
+    margin-top: 100px;
+    position: absolute;
+    margin-left: 500px; 
+  }
+  .earth {
+    margin-top: 400px;
+    margin-left: 525px;
+    height: 400px;
+    width: 400px;
+  }
+  h1 {
+    font-size: 50pt;
+    margin-left: 495px;
+
+  }
+}
+  /*Grote desktop */
+  @media only screen and (min-width: 1980px) {
+  body {
+    font-family: roboto, sans-serif;
+    align-content: center;
+    background-color: crimson;
+  }
+  h1 {
+    margin-left: 775px;
+  }
+  canvas {
+    margin-left: 650px;
+    height: 650px;
+    width: 650px; 
+  }
+  .earth {
+    height: 600px;
+    width: 600px;
+    margin-top: 650px;
+    margin-left: 700px;
+  }
